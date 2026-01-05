@@ -1,38 +1,78 @@
-# sv
+# Digital Products
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A modern SvelteKit template built with love by the CoCoding AI team.
 
-## Creating a project
+![CoCoding AI](https://img.shields.io/badge/Built%20with-CoCoding%20AI-blue)
+![SvelteKit](https://img.shields.io/badge/SvelteKit-FF3E00?logo=svelte&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## About
 
-```sh
-# create a new project in the current directory
-npx sv create
+This project is the property of **CoCoding AI** - Your AI-Powered Development Partner.
 
-# create a new project in my-app
-npx sv create my-app
+🌐 **Website:** [https://cocoding.ai](https://cocoding.ai)
+
+## Tech Stack
+
+- **Framework:** SvelteKit
+- **Language:** TypeScript
+- **Styling:** TailwindCSS
+- **UI Components:** shadcn-svelte
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- pnpm (recommended)
+
+### Installation
+
+```bash
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm dev
+
+# Build for production
+pnpm build
+
+# Preview production build
+pnpm preview
 ```
 
-## Developing
+### Docker
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```bash
+# Build the image
+docker build -t Digital Products .
 
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# Run the container
+docker run -p 3000:3000 Digital Products
 ```
 
-## Building
+## Project Structure
 
-To create a production version of your app:
-
-```sh
-npm run build
+```
+├── src/
+│   ├── lib/
+│   │   ├── components/    # Reusable components
+│   │   └── utils/         # Utility functions
+│   ├── routes/            # SvelteKit routes
+│   └── app.html           # HTML template
+├── static/                # Static assets
+├── Dockerfile             # Docker configuration
+└── package.json
 ```
 
-You can preview the production build with `npm run preview`.
+## License
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+This project is proprietary software owned by CoCoding AI. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Built with ❤️ by the **CoCoding AI Team**
+
+[https://cocoding.ai](https://cocoding.ai)
