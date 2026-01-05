@@ -7,12 +7,14 @@ dist/
 build/
 .svelte-kit/
 .next/
+.nuxt/
+.output/
 .vercel/
 
 # Environment files
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
 
 # IDE
 .idea/
@@ -36,6 +38,7 @@ pnpm-debug.log*
 .cache/
 .parcel-cache/
 .eslintcache
+.turbo/
 
 # Testing
 coverage/

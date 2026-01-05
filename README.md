@@ -69,7 +69,9 @@ docker run -p 3000:3000 Digital Products
 
 ## License
 
-This project is proprietary software owned by CoCoding AI. See the [LICENSE](LICENSE) file for details.
+**PROPRIETARY SOFTWARE** - This project is the exclusive property of CoCoding AI.
+Unauthorized copying, modification, or distribution is strictly prohibited.
+See the [LICENSE](LICENSE) file for details.
 
 ---
 
