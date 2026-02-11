@@ -4,6 +4,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [tailwindcss(), sveltekit()],
+  server: { fs: { deny: [".env", ".env.*", ".git", "**/.ssh/**", "**/*.pem", "**/*.key"] } },
 	preview: {
 		allowedHosts: true
 	}
