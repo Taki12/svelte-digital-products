@@ -146,12 +146,12 @@
   ];
 
   const popularArticles = [
-    { title: "Getting Started Guide", category: "Basics", reads: "15.2k" },
-    { title: "How to Download Products", category: "Downloads", reads: "12.8k" },
-    { title: "Understanding License Types", category: "Licensing", reads: "9.5k" },
-    { title: "Requesting a Refund", category: "Refunds", reads: "8.1k" },
-    { title: "Upgrading Your License", category: "Licensing", reads: "6.7k" },
-    { title: "Payment Methods & Security", category: "Payments", reads: "5.3k" }
+    { title: "Getting Started Guide", category: "Basics", reads: "15.2k", slug: "getting-started" },
+    { title: "How to Download Products", category: "Downloads", reads: "12.8k", slug: "how-to-download" },
+    { title: "Understanding License Types", category: "Licensing", reads: "9.5k", slug: "license-types" },
+    { title: "Requesting a Refund", category: "Refunds", reads: "8.1k", slug: "requesting-refund" },
+    { title: "Upgrading Your License", category: "Licensing", reads: "6.7k", slug: "upgrade-license" },
+    { title: "Payment Methods & Security", category: "Payments", reads: "5.3k", slug: "payment-security" }
   ];
 </script>
 
@@ -297,7 +297,7 @@
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
       {#each popularArticles as article}
-        <a href="#" class="group flex items-center justify-between p-4 bg-card/50 border border-border/50 rounded-xl hover:border-primary/50 hover:bg-card transition-all">
+        <a href="/support/{article.slug}" class="group flex items-center justify-between p-4 bg-card/50 border border-border/50 rounded-xl hover:border-primary/50 hover:bg-card transition-all">
           <div class="flex items-center gap-3">
             <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
               <FileText class="w-5 h-5 text-primary" />
@@ -390,16 +390,18 @@
           <form class="space-y-6">
             <div class="grid md:grid-cols-2 gap-4">
               <div>
-                <label class="block text-sm font-medium mb-2">Name</label>
+                <label for="support-name" class="block text-sm font-medium mb-2">Name</label>
                 <input
+                  id="support-name"
                   type="text"
                   placeholder="Your name"
                   class="w-full px-4 py-2.5 bg-background border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
                 />
               </div>
               <div>
-                <label class="block text-sm font-medium mb-2">Email</label>
+                <label for="support-email" class="block text-sm font-medium mb-2">Email</label>
                 <input
+                  id="support-email"
                   type="email"
                   placeholder="your@email.com"
                   class="w-full px-4 py-2.5 bg-background border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
@@ -408,8 +410,8 @@
             </div>
 
             <div>
-              <label class="block text-sm font-medium mb-2">Subject</label>
-              <select class="w-full px-4 py-2.5 bg-background border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all">
+              <label for="support-subject" class="block text-sm font-medium mb-2">Subject</label>
+              <select id="support-subject" class="w-full px-4 py-2.5 bg-background border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all">
                 <option>Select a topic</option>
                 <option>Download Issues</option>
                 <option>Payment & Billing</option>
@@ -421,8 +423,9 @@
             </div>
 
             <div>
-              <label class="block text-sm font-medium mb-2">Message</label>
+              <label for="support-message" class="block text-sm font-medium mb-2">Message</label>
               <textarea
+                id="support-message"
                 rows="5"
                 placeholder="Describe your issue or question..."
                 class="w-full px-4 py-2.5 bg-background border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all resize-none"

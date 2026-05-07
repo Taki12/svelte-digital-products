@@ -113,16 +113,18 @@
             <Card.Content class="space-y-6">
               <div class="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label class="block text-sm font-medium mb-2">First Name</label>
+                  <label for="first-name" class="block text-sm font-medium mb-2">First Name</label>
                   <input
+                    id="first-name"
                     type="text"
                     placeholder="John"
                     class="w-full px-4 py-2.5 bg-background border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
                   />
                 </div>
                 <div>
-                  <label class="block text-sm font-medium mb-2">Last Name</label>
+                  <label for="last-name" class="block text-sm font-medium mb-2">Last Name</label>
                   <input
+                    id="last-name"
                     type="text"
                     placeholder="Doe"
                     class="w-full px-4 py-2.5 bg-background border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
@@ -131,10 +133,11 @@
               </div>
 
               <div>
-                <label class="block text-sm font-medium mb-2">Email Address</label>
+                <label for="email-address" class="block text-sm font-medium mb-2">Email Address</label>
                 <div class="relative">
                   <Mail class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
                   <input
+                    id="email-address"
                     type="email"
                     placeholder="john@example.com"
                     class="w-full pl-11 pr-4 py-2.5 bg-background border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
@@ -158,16 +161,18 @@
 
                 <div class="space-y-4">
                   <div>
-                    <label class="block text-sm font-medium mb-2">Company Name</label>
+                    <label for="company-name" class="block text-sm font-medium mb-2">Company Name</label>
                     <input
+                      id="company-name"
                       type="text"
                       placeholder="Your Company Inc."
                       class="w-full px-4 py-2.5 bg-background border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
                     />
                   </div>
                   <div>
-                    <label class="block text-sm font-medium mb-2">VAT / Tax ID</label>
+                    <label for="vat-id" class="block text-sm font-medium mb-2">VAT / Tax ID</label>
                     <input
+                      id="vat-id"
                       type="text"
                       placeholder="EU123456789"
                       class="w-full px-4 py-2.5 bg-background border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
@@ -175,8 +180,8 @@
                   </div>
                   <div class="grid md:grid-cols-2 gap-4">
                     <div>
-                      <label class="block text-sm font-medium mb-2">Country</label>
-                      <select class="w-full px-4 py-2.5 bg-background border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all">
+                      <label for="country" class="block text-sm font-medium mb-2">Country</label>
+                      <select id="country" class="w-full px-4 py-2.5 bg-background border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all">
                         <option>United States</option>
                         <option>Canada</option>
                         <option>United Kingdom</option>
@@ -186,8 +191,9 @@
                       </select>
                     </div>
                     <div>
-                      <label class="block text-sm font-medium mb-2">Postal Code</label>
+                      <label for="postal-code" class="block text-sm font-medium mb-2">Postal Code</label>
                       <input
+                        id="postal-code"
                         type="text"
                         placeholder="10001"
                         class="w-full px-4 py-2.5 bg-background border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
@@ -246,10 +252,11 @@
                 <!-- Card Form -->
                 <div class="space-y-4">
                   <div>
-                    <label class="block text-sm font-medium mb-2">Card Number</label>
+                    <label for="card-number" class="block text-sm font-medium mb-2">Card Number</label>
                     <div class="relative">
                       <CreditCard class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
                       <input
+                        id="card-number"
                         type="text"
                         placeholder="1234 5678 9012 3456"
                         class="w-full pl-11 pr-4 py-2.5 bg-background border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
@@ -259,16 +266,18 @@
 
                   <div class="grid grid-cols-2 gap-4">
                     <div>
-                      <label class="block text-sm font-medium mb-2">Expiry Date</label>
+                      <label for="expiry-date" class="block text-sm font-medium mb-2">Expiry Date</label>
                       <input
+                        id="expiry-date"
                         type="text"
                         placeholder="MM/YY"
                         class="w-full px-4 py-2.5 bg-background border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
                       />
                     </div>
                     <div>
-                      <label class="block text-sm font-medium mb-2">CVC</label>
+                      <label for="cvc" class="block text-sm font-medium mb-2">CVC</label>
                       <input
+                        id="cvc"
                         type="text"
                         placeholder="123"
                         class="w-full px-4 py-2.5 bg-background border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
@@ -277,8 +286,9 @@
                   </div>
 
                   <div>
-                    <label class="block text-sm font-medium mb-2">Name on Card</label>
+                    <label for="name-on-card" class="block text-sm font-medium mb-2">Name on Card</label>
                     <input
+                      id="name-on-card"
                       type="text"
                       placeholder="John Doe"
                       class="w-full px-4 py-2.5 bg-background border border-border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
@@ -286,8 +296,8 @@
                   </div>
 
                   <div class="flex items-center gap-2">
-                    <Checkbox bind:checked={savePaymentInfo} />
-                    <label class="text-sm text-muted-foreground">
+                    <Checkbox id="save-payment" bind:checked={savePaymentInfo} />
+                    <label for="save-payment" class="text-sm text-muted-foreground">
                       Save card for future purchases
                     </label>
                   </div>
@@ -308,8 +318,8 @@
 
               <!-- Terms -->
               <div class="flex items-start gap-2">
-                <Checkbox bind:checked={agreeToTerms} class="mt-1" />
-                <label class="text-sm text-muted-foreground">
+                <Checkbox id="agree-to-terms" bind:checked={agreeToTerms} class="mt-1" />
+                <label for="agree-to-terms" class="text-sm text-muted-foreground">
                   I agree to the <a href="/terms" class="text-primary hover:underline">Terms of Service</a> and <a href="/licensing" class="text-primary hover:underline">License Agreement</a>
                 </label>
               </div>
