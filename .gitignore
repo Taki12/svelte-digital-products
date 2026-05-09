@@ -12,8 +12,8 @@ build/
 .vercel/
 
 # Environment files
-.env
-.env.*
+#.env
+#.env.*
 !.env.example
 
 # IDE
